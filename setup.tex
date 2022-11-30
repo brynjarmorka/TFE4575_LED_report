@@ -1,14 +1,14 @@
 % THIS IS THE SETUP FROM NIRIS TEMPLATE
 
 \newcommand{\RomanNumeralCaps}[1]
-    {\MakeUppercase{\romannumeral #1}}
+{\MakeUppercase{\romannumeral #1}}
 \makeatletter
 \def\ps@pprintTitle{%
- \let\@oddhead\@empty
- \let\@evenhead\@empty
- \def\@oddfoot{\footnotesize\itshape
-       \hfill\today}%
- \let\@evenfoot\@oddfoot}
+  \let\@oddhead\@empty
+  \let\@evenhead\@empty
+  \def\@oddfoot{\footnotesize\itshape
+    \hfill\today}%
+  \let\@evenfoot\@oddfoot}
 \makeatother
 \usepackage{dcolumn}
 \usepackage[utf8]{inputenc}
@@ -17,9 +17,9 @@
 \usepackage{textcomp}
 \usepackage{lmodern}
 \renewenvironment{abstract}{\global\setbox\absbox=\vbox\bgroup
-\hsize=\textwidth\def\baselinestretch{1}%
-\noindent\unskip\textbf{Abstract}
-\par\medskip\noindent\unskip\ignorespaces}
+  \hsize=\textwidth\def\baselinestretch{1}%
+  \noindent\unskip\textbf{Abstract}
+  \par\medskip\noindent\unskip\ignorespaces}
 {\egroup}
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -27,11 +27,11 @@
 \usepackage{bm}
 \usepackage{siunitx}
 \sisetup{
-exponent-product = \cdot,
-output-decimal-marker  =  {.}, % komma-stil
-separate-uncertainty = false, %true hvis du ikke vil ha usikkerhet i parentes
-per-mode = symbol,
-group-digits = false,
+  exponent-product = \cdot,
+  output-decimal-marker  =  {.}, % komma-stil
+  separate-uncertainty = false, %true hvis du ikke vil ha usikkerhet i parentes
+  per-mode = symbol,
+  group-digits = false,
 }
 \usepackage{graphicx}
 \renewcommand{\topfraction}{.85}
@@ -44,14 +44,7 @@ group-digits = false,
 \usepackage{flafter}
 \usepackage{booktabs}
 \usepackage{multirow}
-\usepackage[colorlinks,linkcolor=pink]{hyperref}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=purple,
-    filecolor=magenta,      
-    urlcolor=cyan,
-    citecolor=purple
-}
+\usepackage{hyperref}
 \usepackage{cleveref}
 \usepackage{comment}
 \usepackage{arydshln}
@@ -63,5 +56,12 @@ group-digits = false,
 % \pagecolor[rgb]{0.128, 0.128, 0.128}  %black
 % \color[rgb]{0.848, 0.848, 0.848}  %grey
 
-\urlstyle{same} % ????????
+% \urlstyle{same} % makes the url look like the text, still clickable and colored
+\hypersetup{
+  colorlinks=true,
+  linkcolor=purple,
+  filecolor=magenta,
+  urlcolor=cyan,
+  citecolor=purple
+}
 

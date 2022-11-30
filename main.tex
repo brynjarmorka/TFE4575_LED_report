@@ -6,54 +6,67 @@
 \begin{frontmatter}
 
   \title{TFE4575: LED lab}
-  %\title{Characterization of an Unknown Sample Using Scanning Electron Microscopy, Scanning Transmission Electron Microscopy, Energy Dispersive X-Ray Spectroscopy, Atomic Force Microscopy, and Raman Spectroscopy}
+  %\title{bonustitle}
 
   \author[fysikk]{Brynjar Morka Mæhlum}
   \author[fysikk]{Thord Niri Gjesdhal Heggren}
-
-
   \address[fysikk]{Department of Physics, Norwegian University of Science and Technology, 7491 Trondheim, Norway.}
 
   \begin{abstract}
 
-    \noindent make the abstract
+    \noindent make the abstract. (short)
 
   \end{abstract}
 
 
 \end{frontmatter}
 
-{ % Denne gjør table of contents pink i stedet for blå
+{ % This changes links to purple instead of blue
 \hypersetup{linkcolor=purple}
+
 \tableofcontents
-}
+
+
+%%%%%%%%%%%%%%%%%%% INTRODUCTION %%%%%%%%%%%%%%%%%%
+\section{Introduction}
+\label{intro}
+(SHORT)
+
+\input{chapters/introduction.tex}
 
 %%%%%%%%%%%%%%%%%%% THEORY %%%%%%%%%%%%%%%%%%
 \section{Theory}
+\label{theory}
 
 \input{chapters/theory.tex}
 
 %%%%%%%%%%%%%%%%%%% METHODS %%%%%%%%%%%%%%%%%%
 \section{Methods}
+\label{methods}
 \input{chapters/methods.tex}
 
 
 
 %%%%%%%%%%%%%%%%%%% RESULTS %%%%%%%%%%%%%%%%%%
 \section{Results}
+\label{results}
 \input{chapters/results.tex}
 
 %%%%%%%%%%%%%%%%%%% DISCUSSION %%%%%%%%%%%%%%%%%%
 \section{Discussion}
+\label{discussion}
+
+As stated in \autoref{intro}, the world needs LEDs to \dots
 \input{chapters/discussion.tex}
 
 %%%%%%%%%%%%%%%%%%% CONCLUSION %%%%%%%%%%%%%%%%%%
 \section{Conclusion}
+\label{conclusion}
 
 \noindent very nice \cite{referanse_test}
 
 %%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%
-
+}
 \begingroup
 \begin{center}
   \rule{2cm}{.4pt}
