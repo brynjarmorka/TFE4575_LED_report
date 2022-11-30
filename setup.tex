@@ -1,0 +1,67 @@
+% THIS IS THE SETUP FROM NIRIS TEMPLATE
+
+\newcommand{\RomanNumeralCaps}[1]
+    {\MakeUppercase{\romannumeral #1}}
+\makeatletter
+\def\ps@pprintTitle{%
+ \let\@oddhead\@empty
+ \let\@evenhead\@empty
+ \def\@oddfoot{\footnotesize\itshape
+       \hfill\today}%
+ \let\@evenfoot\@oddfoot}
+\makeatother
+\usepackage{dcolumn}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{textcomp}
+\usepackage{lmodern}
+\renewenvironment{abstract}{\global\setbox\absbox=\vbox\bgroup
+\hsize=\textwidth\def\baselinestretch{1}%
+\noindent\unskip\textbf{Abstract}
+\par\medskip\noindent\unskip\ignorespaces}
+{\egroup}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{caption} %% figurer fugler
+\usepackage{bm}
+\usepackage{siunitx}
+\sisetup{
+exponent-product = \cdot,
+output-decimal-marker  =  {.}, % komma-stil
+separate-uncertainty = false, %true hvis du ikke vil ha usikkerhet i parentes
+per-mode = symbol,
+group-digits = false,
+}
+\usepackage{graphicx}
+\renewcommand{\topfraction}{.85}
+\renewcommand{\bottomfraction}{.7}
+\renewcommand{\textfraction}{.15}
+\renewcommand{\floatpagefraction}{.66}
+\setcounter{topnumber}{3}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{10}
+\usepackage{flafter}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage[colorlinks,linkcolor=pink]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=purple,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=purple
+}
+\usepackage{cleveref}
+\usepackage{comment}
+\usepackage{arydshln}
+\usepackage[font=small,labelfont=bf]{caption}
+\usepackage{subcaption}
+
+% Dakrmode
+\usepackage{xcolor}
+% \pagecolor[rgb]{0.128, 0.128, 0.128}  %black
+% \color[rgb]{0.848, 0.848, 0.848}  %grey
+
+\urlstyle{same} % ????????
+

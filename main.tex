@@ -1,0 +1,70 @@
+\documentclass[5p,sort&compress]{elsarticle}	
+
+\input{setup.tex}
+
+\begin{document}
+\begin{frontmatter}
+
+  \title{TFE4575: LED lab}
+  %\title{Characterization of an Unknown Sample Using Scanning Electron Microscopy, Scanning Transmission Electron Microscopy, Energy Dispersive X-Ray Spectroscopy, Atomic Force Microscopy, and Raman Spectroscopy}
+
+  \author[fysikk]{Brynjar Morka Mæhlum}
+  \author[fysikk]{Thord Niri Gjesdhal Heggren}
+
+
+  \address[fysikk]{Department of Physics, Norwegian University of Science and Technology, 7491 Trondheim, Norway.}
+
+  \begin{abstract}
+
+    \noindent make the abstract
+
+  \end{abstract}
+
+
+\end{frontmatter}
+
+{ % Denne gjør table of contents pink i stedet for blå
+\hypersetup{linkcolor=purple}
+\tableofcontents
+}
+
+%%%%%%%%%%%%%%%%%%% THEORY %%%%%%%%%%%%%%%%%%
+\section{Theory}
+
+\input{chapters/theory.tex}
+
+%%%%%%%%%%%%%%%%%%% METHODS %%%%%%%%%%%%%%%%%%
+\section{Methods}
+\input{chapters/methods.tex}
+
+
+
+%%%%%%%%%%%%%%%%%%% RESULTS %%%%%%%%%%%%%%%%%%
+\section{Results}
+\input{chapters/results.tex}
+
+%%%%%%%%%%%%%%%%%%% DISCUSSION %%%%%%%%%%%%%%%%%%
+\section{Discussion}
+\input{chapters/discussion.tex}
+
+%%%%%%%%%%%%%%%%%%% CONCLUSION %%%%%%%%%%%%%%%%%%
+\section{Conclusion}
+
+\noindent very nice \cite{referanse_test}
+
+%%%%%%%%%%%%%% REFERENCES %%%%%%%%%%%%%%%%%%
+
+\begingroup
+\begin{center}
+  \rule{2cm}{.4pt}
+\end{center}
+\makeatletter
+\@beginparpenalty=10000
+\makeatother
+\bibliographystyle{unsrt} %unsrtnat
+\bibliography{references}
+
+
+\endgroup
+
+\end{document}
