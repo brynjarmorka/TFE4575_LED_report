@@ -35,14 +35,37 @@ This is the steps of the process, and the reason for each step:
 Negative photoresist are often used for lift-off, because negative photoresist can achieve an undercut which can improve the metallization edges.
 Photoresists needs different developing time and exposure doses, and they do change over time when the photoresist is exposed to light, heat, humidity, and time.
 
+\subsection{Contact Formation}
 
+LEDs need to have both a front and back metal contact.
+The purpose of the contacts are to provide a path so that  current can be injected to the device. 
+The back contact can simply be deposited on the whole back side of the wafer.
+The front contact however, needs to be patterned.
+This is because in order to reduce absorption losses, the contact area needs to be minimized while keeping the spreading resistance as low as possible.
+It is important to carefully chose the contact material, as it affect the electrical properties of the device.
+Also, the front side contracts should be made first, as the following steps may damage the surface.
 
-\subsection{Etching?}
+\subsection{Etching}
 \label{etching}
+
+Etching is a process of chemically removing material from a surface. 
+The process can be divided into two categories -  wet etching and dry etching.
+Wet etching uses a liquid etchant, while dry etching uses a gas etchant.
+
+In LED fabrication, etching can be used e.g. to remove strongly light absorbing layers or to electrically isolate different parts of the device.
+
+\subsection{Passivation}
+
+Exposed sides of the LED will result in high non-radiative recombination at the surface, which will reduce the efficiency of the LED.
+
+The Si$_3$N$_4$ has two main purposes in on the LED.
+Firstly, it acts as a passivation agent, reducing the surface non-radiative recombination.
+Secondly, it reduces the possibility of short-circuiting the diode by conduction on the sides of the etched mesa. 
+The thickness of this layer should be such that it works as an antireflective coating, i.e. have an optical thickness of $(k/2 + 1/4)\lambda$.
 
 
 \subsection{Characterization equipment}
 \label{characterization}
 
 The characterization equipment used in this lab was optical microscope, SEM, profilometer and IES-stuff to measure the LED efficiency.
-The theory behind these instuments and how they work are assumed to be known.
+The theory behind these instruments and how they work are assumed to be known.
