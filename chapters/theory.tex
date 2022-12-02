@@ -3,8 +3,8 @@
 \subsection{LED theory}
 \label{LEDtheory}
 
-In its most simple form, a LED is a p-type semiconductor (SC) in contact with a n-type SC, i.e. a pn-junction.
-In the region close to the contact point of the two SC materials, electrons and holes will recombine.
+In its most simple form, a LED is a p-type semiconductor (SC) in contact with a n-type SC, i.e. a pn-junction \cite{streetman2015solid}.
+In the region close to the contact area of the two SC materials, electrons and holes will recombine.
 This leaves a negative charge on the p-type SC and a positive charge on the n-type SC, creating an electric field.
 The region where this electric field is present is called the depletion region, and will under normal conditions be free of charge carriers.
 When a voltage is applied over the pn-junction, electrons and holes are pushed into the depletion region where they recombine.
@@ -21,8 +21,9 @@ This can either happen non-radiatively or radiatively, where the latter is the p
 
 \subsection{Photolithography}
 \label{photolithography}
+This section is based on Quirk and Serda's book \textit{Semiconductor Manufacturing Technology} \cite{quirkSerda}.
 
-Photolithography is used to print temporary micro- and nanoscale structures on a substrate.
+Photolithography is used to print micro- and nanoscale structures on a substrate.
 This is done by coating the substrate in a light-sensitive photoresist and strategically exposing it to light.
 The photoresist will then either harden or dissolve depending on the type.
 Negative resist gets insolvable in the developer when exposed to light, while positive gets solvable.
@@ -33,31 +34,34 @@ The following list gives the name and purpose of the eight main steps in the pho
 % cleaning, spinn coating, soft bake, exposure,  develop, post exposure, hard bake, inpect
 
 \begin{enumerate}
-    \item \textbf{Cleaning}: Remove any contamination from the substrate.
+    \item \textbf{Vapor prime}: Remove contamination from the substrate.
     \item \textbf{Spin coating}: Spin coat the photoresist on the substrate.
-    \item \textbf{Soft bake}: Bake the photoresist to remove any solvent.
-    \item \textbf{Exposure}: Expose certain areas of the photoresist to light. Eventually with mask alignment.
-    \item \textbf{Develop}: Develop the photoresist to remove the softened parts.
+    \item \textbf{Soft bake}: Bake the photoresist to remove solvent.
+    \item \textbf{Exposure}: Align the mask and expose certain areas of the photoresist to light.
+    \item \textbf{Develop}: Develop the photoresist to remove the soluble parts.
     \item \textbf{Post exposure bake}: Bake the photoresist to initiate resist reactions for deep UV resists and enhance adhesion. 
-    \item \textbf{Hard bake}: Bake the photoresist to remove any solvent. Not often needed.
-    \item \textbf{Inspect}: Optical inspect the photoresist to see if it is good.
+    \item \textbf{Hard bake}: Bake the photoresist to remove more solvent. Not often needed.
+    \item \textbf{Inspect}: Optical inspection of the photoresist to verify the quality of the pattern.
 \end{enumerate} 
 
 Lift-off is a technique used to remove the photoresist from the substrate after metallization.
 When doing lift-off, it is most common to use negative resist. 
-This is because only negative rsist can achieve an undercut resist profile, which can improve the metall edges
+This is because only negative resist can achieve an undercut resist profile, which can improve the metal edges.
 
 Different photoresists need different baking parameters, spin speeds, developing times and exposure doses.
-These can also change for the same resist over time, when the resist is exposed to light, heat, humidity, and contaminations.
+The parameters can change for the same resist over time, e.g. when the resist is exposed to light, heat, humidity, or contaminations.
 
-\subsection{Contact Formation}
+\subsection{Contact Formation} \label{contactformation}
+
+
+\hyperref[contactformation]{Subsection~\ref*{contactformation}}, \autoref{etching}, and \autoref{passivation} are based on the laboratory manual for TFE4575 \cite{labmanual}.
 
 LEDs need to have both a front and back metal contact.
 The purpose of the contacts are to provide a path so that  current can be injected to the device. 
 The back contact can simply be deposited on the whole back side of the wafer.
 The front contact however, needs to be patterned.
-This is because in order to reduce absorption losses, the contact area needs to be minimized while keeping the spreading resistance as low as possible.
-It is important to carefully chose the contact material, as it affect the electrical properties of the device.
+In order to reduce absorption losses, the contact area needs to be minimized while keeping the spreading resistance as low as possible.
+It is important to carefully chose the contact material, as it affects the electrical properties of the device.
 Also, the front side contracts should be made first, as the following steps may damage the surface.
 
 \subsection{Etching}
@@ -69,11 +73,11 @@ Wet etching uses a liquid etchant, while dry etching uses a gas etchant.
 In LED fabrication, etching is an important process step.
 Here, etching is typically used to remove strongly light absorbing layers or to electrically isolate different parts of the device.
 
-\subsection{Passivation}
+\subsection{Passivation} \label{passivation}
 
 Exposed sides of the LED will result in high non-radiative recombination at the surface, which will reduce the efficiency of the LED.
 Also, exposed sided increases the risk of shorting the circuit.
-For those two reasons it is thus necessary to coat the LED surface in passivation material, e.g. Si$_3$N$_4$.
+For those two reasons, it is necessary to coat the LED surface in a passivation material, e.g. Si$_3$N$_4$.
 The deposition of this layer should be done by an isotropic deposition method to ensure that the layer cover both horizontal and vertical edges.
 One such method is plasma enhanced chemical vapor deposition (PECVD).
 The thickness of the layer should be such that the optical path creates destructive interference at the wavelength of the emitted light $\lambda$.
@@ -86,8 +90,11 @@ This relation is given by
 
 where $d$ is the thickness and $n$ is the refractive index.
 
-\subsection{Characterization equipment}
-\label{characterization}
+\subsection{Equipment}
+\label{Equipment}
+
+The manufacturing equipment used in the lab were hot plate, spin coater, photolithography tool, PECVD, and annealing furnace.
 
 The characterization equipment used in this lab were optical microscope, SEM, profilometer, ellipsometer, and LED IV-testing.
-The theory and working principle behind these instruments are assumed to be known.
+
+The theory and working principle behind these tools and instruments are assumed to be known.
