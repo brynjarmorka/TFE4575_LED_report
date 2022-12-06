@@ -2,7 +2,7 @@
 
 \subsection{Photoresist profile}
 
-\autoref{fig:undercut} shows an SEM image of the photoresit profile of the dose test sample where undercut was most visible.
+\noindent \autoref{fig:undercut} shows an SEM image of the photoresit profile of the dose test sample where undercut was most visible.
 This is the sample with a dose of 1300 mJ/cm$^2$ and 5 minutes developing time.
 The depth of the undercut, i.e. the difference between the top and bottom of the profile, is roughly 1 \textmu m.
 
@@ -74,7 +74,7 @@ This shows that the bottom area of the finger is smaller than the top area, agai
 \subsection{Etching}
 
 % profilometer on GaAs etch
-The GaAs wet etch of the dummy was done for 45 seconds and gave a depth of 50 nm, thus the etching of the LED was done for twice as long at 90 seconds and gave a depth of 100 nm.
+\noindent The GaAs wet etch of the dummy was done for 45 seconds and gave a depth of 50 nm, thus the etching of the LED was done for twice as long at 90 seconds and gave a depth of 100 nm.
 This is an etch rate of 1.11 nm/s.
 The measured height of two fingers using the profilometer is shown in \autoref{fig:profilometer_GaAs_100nm_etch}.
 Measurements of other fingers gave similar results.
@@ -131,7 +131,7 @@ The etch rate was around 40 nm/s.
 
 \subsection{PECVD}
 
-The result of the PECVD of Si$_3$N$_4$ was inspected using an ellipsometer.
+\noindent The result of the PECVD of Si$_3$N$_4$ was inspected using an ellipsometer.
 From this, the reflectance as a function of wavelength was obtained, as can be seen in \autoref{fig:pecvd_ellipsometer}.
 The goodness of fit was 0.9926.
 The lowest measured reflectance was 0.29 \% at 667.7 nm. 
@@ -165,22 +165,22 @@ These results are summarized in \autoref{tab:pecvd_ellipsometer}.
 
 \subsection{Optical characterization of PECVD}
 
-After the PECVD and its finishing steps, an 10X optical image was taken of the LED.
+\noindent After the PECVD and its finishing steps, an 10X optical image was taken of the LED.
 This image can be seen in \autoref{fig:led_optical}.
 From this, it can clearly be seen that the LED sample surface is not uniform.
-Visually, it seems that there are cracks and impurities present.
+Visually, it seems that there are cracks and impurities present.  
 
 \begin{figure}
     \centering
     \includegraphics[width=0.45\textwidth]{figures/led_after_pecvd.png}
-    \caption{Optical image of the LED.}
+    \caption{Optical overview 5X magnification image of the LED. The image shows cracks and impurities on the surface.}
     \label{fig:led_optical}
 \end{figure}
 
 
 \subsection{Final optical inspection}
 
-Using an optical microscope, the final LED sample was inspected.
+\noindent Using an optical microscope, the final LED sample was inspected.
 \autoref{fig:best_led} shows the visually best LED, which has an 80 \textmu m period and a 4 \textmu m finger width.
 \autoref{fig:worst_led} shows the visually worst LED, which has a 40 \textmu m period and a 16 \textmu m finger width.
 
@@ -206,17 +206,12 @@ From these pictures, it is not possible to give a numerical estimate on the alig
     \caption{5X magnification optical images of the visually best and worst LEDs.}
 \end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[width=0.49\textwidth]{figures/align_marks.png}
-    \caption{50X magnification optical images of the four alignment marks.}
-    \label{fig:align_marks}
-\end{figure}
+
 
 
 \subsection{IV measurements}
 
-Using the sourcemeter, IV measurements were performed on two LEDs, one with 100 \textmu m period and 16 \textmu m finger width and one with 40 \textmu m period and 4 \textmu m finger width.
+\noindent Using the sourcemeter, IV measurements were performed on two LEDs, one with 100 \textmu m period and 16 \textmu m finger width and one with 40 \textmu m period and 4 \textmu m finger width.
 \autoref{fig:iv_curve_reverse} shows the IV curve from -1 V to 0.5 V, while \autoref{fig:iv_curve_forward} shows the IV-curve for the same LEDs from 0.5 V to 1.8 V.
 
 Using a iPhone 13 Pro Max, a picture of the LED sample was taken while one LED was emitting light.
@@ -233,6 +228,13 @@ The picture can be seen in \autoref{fig:led_light}.
 
 \begin{figure}
     \centering
+    \includegraphics[width=0.49\textwidth]{figures/align_marks.png}
+    \caption{50X magnification optical images of the four alignment marks.}
+    \label{fig:align_marks}
+\end{figure}
+
+\begin{figure}
+    \centering
     \includegraphics[width=\linewidth]{figures/LED_IV-curve_forward.png}
     \caption{IV-curve for two LEDs, one with 100 \textmu m period and 16 \textmu m finger width and one with 40 \textmu m period and 4 \textmu m finger width.}
     \label{fig:iv_curve_forward}
@@ -240,7 +242,7 @@ The picture can be seen in \autoref{fig:led_light}.
 
 \begin{figure}
     \centering
-    \includegraphics[width=\linewidth]{figures/led_light.png}
+    \includegraphics[width=0.49\textwidth]{figures/led_light.png}
     \caption{Image of the LED sample while one LED was emitting light. Taken with an iPhone 13 Pro Max.}
     \label{fig:led_light}
 \end{figure}

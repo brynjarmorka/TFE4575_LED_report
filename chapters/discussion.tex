@@ -4,7 +4,7 @@
 \label{sec:discussion:photolithography}
 
 % lithography undercut 
-All the lithography processes used in this work gave valuable experience.
+\noindent All the lithography processes used in this work gave valuable experience.
 One of the experiences was how to do a dose test to get a sufficient undercut while using negative photoresist. 
 The lab manual for the course \cite{labmanual} states that the undercut should be at least 1 \textmu m deep, while the teaching assistant stated that 0.5-1 \textmu m would be sufficient.
 Getting an exact measurement of the undercut was difficult with the Table Top SEM, because the tilting and rotation of the sample in the chamber is very restricted. 
@@ -27,20 +27,27 @@ Negative photoresist is normally used for lift-off, but results from this work s
 \label{sec:discussion:etch}
 
 % the etch curves which are not flat
-The plots from the profilometer on the etches show that the etch is not perfectly flat.
+\noindent Etching of the two different layers gave some artifacts and had as expected different etch rates.
+The etch rate for the mesa was as intended higher, because the etch needed to be around 10 times deeper than the etch of the GaAs layer.
+Even though the etch solutions were different, it was expected that the mesa etch rate would be higher because the concentration of the etch solution was higher.
+Etch solution is not the only factor that affects the etch rate, but it is important.
+
+The plots from the profilometer on the etches show that the surface after the etch is not perfectly flat.
 Three artifacts have been identified in the etch process.
 
 One artifact is the contact loss shown in \autoref{fig:Dummy_GaAs_80nm_etch_lost_contact}. 
-Here the depth is measured to 330 nm, but this is uncertain since the contact is lost 20 \textmu m after the etch edge.
+Here, the depth is measured to 330 nm, but this is uncertain since the contact is lost 20 \textmu m after the etch edge.
 The contact loss can be countered with the right settings on the profilometer. 
 The artifact could have been something else, but the contact loss is the most likely cause since the profilometer data outside the plot on the left side is flat and correct. 
+The plot of the mesa etch could also have this artifact. 
+To be sure that the etch depth was deeper than 3.1 \textmu m in the mesa etch, the etch time was increased from the dummy to the LED sample to compensate for eventual profilometer contact loss.
 
 A second artifact are on the vertical edges, where the etch is varying a lot. 
 This is illustrated in \autoref{fig:profilometer_GaAs_100nm_etch}.
 The other vertical edges varied in other but similar ways. 
 This could both be caused by the etch process and the profilometer.
 The profilometer might struggle to measure around vertical edges. 
-The etch process could be affected by  the increased area and by different etch rates on different crystallographic planes.
+The etch process could be affected by the increased area and by different etch rates on different crystallographic planes.
 
 A third artifact is the squiggly surface, shown between the fingers in \autoref{fig:profilometer_GaAs_100nm_etch}. 
 This artifact is caused by the etch process, and is present all over the wafer where the etch was done. 
@@ -48,7 +55,7 @@ The surface is varying around $\pm$ 5 nm, which is a lot for a 100 nm etch.
 This artifact could potentially block some of the light from the LED, but it is not clear how much of the light this could block.
 
 \subsection{Deposition of passivation layer} 
-If all process steps are done correctly, the LED will emit light at 675 nm.  
+\noindent If all process steps are done correctly, the LED will emit light at 675 nm.  
 For Si$_3$N$_4$, this corresponds to an optical thickness of around 253 nm.
 The optical thickness of Si$_3$N$_4$ was measured to be 249.70 nm and calculated to be 247.91 nm.
 A few nanometers difference between the measured and calculated thickness is expected, because the $n$ in the calculation is an approximation. 
@@ -67,7 +74,7 @@ Using these numbers, the deposition time could be adjusted to 18 minutes and 50 
 \subsection{Surface artifact}
 \label{sec:discussion:surface_artifact}
 
-The surface of the LED sample was far from perfect throughout the process.
+\noindent The surface of the LED sample was far from perfect throughout the process.
 While alignment in the MLA was done, multiple surface impurities were visible. 
 These impurities are probably what is seen as a high and abrupt peak in the profilometer data in \autoref{fig:profilometer_GaAs_100nm_etch} around 320 \textmu m.
 Peaks like this one are visible in all the profilometer data from the sample. 
@@ -81,7 +88,7 @@ Another argument for the artifacts being a result of the etch process and not th
 
 \subsection{IV-measurements}
 
-Initially, only a very low current was detected during the voltage swipe, in the order of pico amperes.
+\noindent Initially, only a very low current was detected during the voltage swipe, in the order of pico amperes.
 Therefore, the voltage was briefly increased to 10 V.
 This caused the current to increase to the maximum allowed current, 30 mA.
 This behavior suggests that somewhere in the LED structure, minimum two layers were not in contact.

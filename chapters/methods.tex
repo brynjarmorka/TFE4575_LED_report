@@ -32,7 +32,7 @@ After the last step, the IV-characteristics of the LEDs were inspected.
 \subsection{LED design}
 \label{methods:led_design}
 
-Different finger spacings and finger widths were tested.
+\noindent Different finger spacings and finger widths were tested.
 An overview schematic of the LED design is shown in \autoref{fig:led_schematic}.
 One LED was 1 mm x 1 mm.
 The bus bar for contact pad was 1 mm x 40 \textmu m.
@@ -64,7 +64,7 @@ Schematics of the alignment marks in layer 1 and layer 2 is shown in \autoref{fi
 \subsection{Front contact formation}
 \label{methods:front_contact}
 
-The bus bars and their fingers, i.e. the front contacts, were formed with lithography and lift-off.
+\noindent The bus bars and their fingers, i.e. the front contacts, were formed with lithography and lift-off.
 A dose test was done to find the optimal dose and developing time for the resist, ensuring an undercut.
 To verify this, both a SEM image and optical images of the sample were taken.
 The optimal dose for MAN 440 was 1300 mJ/cm$^2$ and the optimal developing time was 5 minutes.
@@ -79,11 +79,10 @@ Negative photoresist was used, and the steps were done in the following order:
     \item Exposed the pattern at 1300 mJ/cm$^2$ in the MLA.
     \item Developed in maD-332S developer for 5 minutes.
     \item Optical inspected the pattern.
-    \item Teaching assistants metallized the wafer with a \\Pd/Ti/Pt/Au stack.
+    \item Teaching assistants metallized the wafer with a \\Pd/Ti/Pt/Au stack, referred to as the Au fingers.
     \item Lift-off with acetone.
 \end{enumerate}
 
-The Pd/Ti/Pt/Au stack is referred to as the Au fingers. 
 
 Unfortunately, a mix-up of the type of developer was done, and the process had to be repeated. 
 The optical inspection before round number two showed some contamination on the wafer, which was probably caused by the wrong developer.
@@ -92,9 +91,9 @@ The wafer was cleaned thoroughly with acetone and IPA before the second round, b
 Another problem was that the dose test were done with a resist that got emptied, and a newer resist had to be used for the actual process.
 When using the new resist the developer time was increased from 5 to 6 minutes, which gave an undercut but damaged the alignment marks and the thickest and closest fingers.
 
-\begin{figure}[h]
+\begin{figure}[!h]
     \centering
-    \includegraphics[width=0.3\textwidth]{figures/CleWin_L1.png}
+    \includegraphics[width=0.325\textwidth]{figures/CleWin_L1.png}
     \caption{
         Layer 1. 
         Numbers on the top is the spacing between the fingers in the LED matrix.
@@ -107,9 +106,9 @@ When using the new resist the developer time was increased from 5 to 6 minutes, 
 
 
 % L2
-\begin{figure}[h]
+\begin{figure}[!h]
     \centering
-    \includegraphics[width=0.3\textwidth]{figures/CleWin_L2.png}
+    \includegraphics[width=0.325\textwidth]{figures/CleWin_L2.png}
     \caption{
         Layer 2. 
         This is the same as layer 1, but with a 5 \textmu m buffer on the whole pattern. 
@@ -119,9 +118,9 @@ When using the new resist the developer time was increased from 5 to 6 minutes, 
 
 
 % L3 
-\begin{figure}[h]
+\begin{figure}[!h]
     \centering
-    \includegraphics[width=0.3\textwidth]{figures/CleWin_L3.png}
+    \includegraphics[width=0.325\textwidth]{figures/CleWin_L3.png}
     \caption{
         Layer 3. 
         This is the mesa etch layer. 
@@ -131,9 +130,9 @@ When using the new resist the developer time was increased from 5 to 6 minutes, 
 \end{figure}
 
 % L4
-\begin{figure}[h]
+\begin{figure}[!h]
     \centering
-    \includegraphics[width=0.3\textwidth]{figures/CleWin_L4.png}
+    \includegraphics[width=0.325\textwidth]{figures/CleWin_L4.png}
     \caption{
         Layer 4. 
         This is the HF etch layer. 
@@ -142,10 +141,11 @@ When using the new resist the developer time was increased from 5 to 6 minutes, 
     \label{fig:CleWin_L4}
 \end{figure}
 
+
 % L5
-\begin{figure}[]
+\begin{figure}[!h]
     \centering
-    \includegraphics[width=0.3\textwidth]{figures/CleWin_L5.png}
+    \includegraphics[width=0.325\textwidth]{figures/CleWin_L5.png}
     \caption{
         Layer 5. 
         This is the pad metallization layer, where each box is 1 mm x 0.8 mm. 
@@ -156,9 +156,9 @@ When using the new resist the developer time was increased from 5 to 6 minutes, 
 
 
 % Alignment marks
-\begin{figure}[]
+\begin{figure}[!h]
     \centering
-    \includegraphics[width=0.3\textwidth]{figures/CleWin_alignment_marks.png}
+    \includegraphics[width=0.5\textwidth]{figures/CleWin_alignment_marks.png}
     \caption{
         Alignment marks for layer 1 on the left and layer 2 on the right. 
         The design allows quantification of the alignment error.
@@ -167,12 +167,12 @@ When using the new resist the developer time was increased from 5 to 6 minutes, 
     \label{fig:CleWin_alignment_marks}
 \end{figure}
 
+
+
 \newpage
-
-
 \subsection{GaAs contact layer etch}
 \label{methods:wet_etch}
-The heavily p-doped GaAs layer at the top of the metal stack was etched away to allow light to pass out of the LED.
+\noindent The heavily p-doped GaAs layer at the top of the metal stack was etched away to allow light to pass out of the LED.
 The deposited Au fingers were measured to be 250 nm high in the profilometer.
 Measuring the Au height was important for the later measurement of the etch depth of the 100 nm GaAs layer.
 The Au fingers were protected with a positive photoresist before the wet etch.
@@ -210,7 +210,7 @@ The etch steps were as follows:
 
 \subsection{Backside contact formation}
 \label{methods:backside_metallization}
-The backside of the LED sample was metallized with a Pd/Ge/Ti/Pt/Au stack to form the backside contact.
+\noindent The backside of the LED sample was metallized with a Pd/Ge/Ti/Pt/Au stack to form the backside contact.
 The positive photoresist SPR 700 was used to protect the frontside, using the following steps:
 \begin{enumerate}
     \item Cleaned the sample with acetone and IPA.
@@ -227,7 +227,7 @@ The positive photoresist SPR 700 was used to protect the frontside, using the fo
 
 \subsection{Mesa etch, PECVD passivation deposition, and contact annealing}
 \label{methods:PECVD}
-In one session the the mesa was etched, the passivation layer deposited and the contacts annealed.
+\noindent In one session the the mesa was etched, the passivation layer deposited and the contacts annealed.
 The mesa etch was done with a wet etch with H$_3$PO$_4$:H$_2$O$_2$:H$2$O 5:5:15, with the goal of separating the 16 LEDs.
 The mesa etch had to get through the two p-doped Al$_{0.7}$Ga$_{0.3}$As layers, i.e. had to be deeper than 3 \textmu m.
 The preperation for the mesa etch was to add a positive photoresist mesa mask, which was done in the following steps:
@@ -266,7 +266,7 @@ The following steps were done:
 \subsection{Planarization and passivation layer etch}
 \label{methods:Planarization}
 
-The passivation layer HF etch was done by the teaching assistants.
+\noindent The passivation layer HF etch was done by the teaching assistants.
 The planarization and preperation for the passivation layer etch was to add a thick positive photoresist with a mask opening on the bottom bus bar, and was done in the following steps:
 
 \begin{enumerate}
@@ -286,7 +286,7 @@ The planarization and preperation for the passivation layer etch was to add a th
 \subsection{Pad metallization}
 \label{methods:pad_metallization}
 
-Lithography on the LED sample was done to prepare for the pad metallization.
+\noindent Lithography on the LED sample was done to prepare for the pad metallization.
 The teaching assistants did the pad metallization.
 The preparation was to make a negative photoresist mask for the pad metallization, and was done in the following steps:
 \begin{enumerate}
@@ -305,7 +305,7 @@ The preparation was to make a negative photoresist mask for the pad metallizatio
 \subsection{LED testing/characterization}
 \label{methods:LED_testing}
 
-The final LED sample was tested using a Keithley 2450 SourceMeter, a probe, and an optical microscope.
+\noindent The final LED sample was tested using a Keithley 2450 SourceMeter, a probe, and an optical microscope.
 Initially, there was no measured contact in the LED between the frontside and the backside.
 The voltage was then turned up to 10 V, which warmed up the LED and gave contact. 
 Using the SourceMeter, the voltage was swept from -1 V to 3 V, while the measured current was recorded.
