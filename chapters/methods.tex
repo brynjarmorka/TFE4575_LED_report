@@ -154,9 +154,11 @@ Negative photoresist was used, and the steps were done in the following order:
     \item Exposed the pattern at 1300 mJ/cm$^2$ in the MLA, maskless aligner.
     \item Developed in maD-332S developer for 5 minutes.
     \item Optical inspected the pattern.
-    \item Teaching assistants metallized the wafer with Au.
+    \item Teaching assistants metallized the wafer with a Pd/Ti/Pt/Au stack.
     \item Lift-off with acetone.
 \end{enumerate}
+
+The Pd/Ti/Pt/Au stack is referred to as the Au fingers. 
 
 Unfortunately, a mix-up of the type of developer was done, and the process had to be repeated. 
 The optical inspection before round number two showed some contamination on the wafer, which was probably caused by the wrong developer.
@@ -208,7 +210,7 @@ The etch steps were as follows:
 
 \subsection{Backside contact formation}
 \label{methods:backside_metallization}
-The backside of the LED sample was metallized with Au to form the backside contact.
+The backside of the LED sample was metallized with a Pd/Ge/Ti/Pt/Au stack to form the backside contact.
 The positive photoresist SPR 700 was used to protect the frontside, using the following steps:
 \begin{enumerate}
     \item Cleaned the sample with acetone and IPA.
@@ -295,12 +297,20 @@ The preparation was to make a negative photoresist mask for the pad metallizatio
     \item Exposed the pattern at 1300 mJ/cm$^2$ in the MLA
     \item Developed in maD-332S developer for 5 minutes.
     \item Optical inspected the pattern to see if the pattern covered the bottom bus bar and an area below.
-    \item Handed in the sample to the teaching assistants, who did the pad metallization with Au.
+    \item Handed in the sample to the teaching assistants, who did the pad metallization with Ti/Au, with 30 nm Ti and 500 nm Au.
     \item Lift-off was done with acetone.
 \end{enumerate}
 
 
 \subsection{LED testing/characterization}
 \label{methods:LED_testing}
-After all these steps the LED was ready for testing.
-Testing was done at IES, with \dots
+
+The final LED sample was tested using a Keithley 2450 SourceMeter, a probe, and an optical microscope.
+Initially, there was no measured contact in the LED between the frontside and the backside.
+The voltage was then turned up to 10 V, which warmed up the LED and gave contact. 
+Using the SourceMeter, the voltage was swept from -1 V to 3 V, while the measured current was recorded.
+The measuring was automatically stopped when a current of 30 mA was reached.
+The results were then plotted as an IV-curve.
+Two of the LEDs was measured this way. 
+
+The LED was turned on with 1.71 V and 30 mA, and images was taken with an iPhone.

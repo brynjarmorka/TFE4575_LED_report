@@ -79,6 +79,25 @@ It is most likely that the surface impurities were present before the etch, and 
 The different etch rates are visible as different colors in the optical microscope images in \autoref{fig:led_optical}, which can arise due to different thicknesses. 
 Another argument for the artifacts being a result of the etch process and not the annealing, is that the passivation layer totally covers the surface and protects it from damage. 
 
+\subsection{IV-measurements}
 
+Initially, only a very low current was detected during the voltage swipe, in the order of pico amperes.
+Therefore, the voltage was briefly increased to 10 V.
+This caused the current to increase to the maximum allowed current, 30 mA.
+This behavior suggests that somewhere in the LED structure, minimum two layers were not in contact.
+The increased voltage will anneal the layers and make them diffuse into contact so that current can flow through them.
+One possible explanation of this behavior is that during the frontside contact metal deposition, the chamber was exposed to air between the titanium and gold layer.
+This can result in an oxide layer forming between them.
+An oxide layer can reduce the conductivity, and annealing can fix this problem. 
+Annealing is probably what happened to the LEDs when the voltage was set to 10 V, because it fixed the contact problem.
 
+While there are some differences between the IV-curves of the two LEDs, both show a typical diode behavior.
+At negative voltages, the LEDs show a low reverse current and one of the LEDs have a breakdown at between -0.5 and -1.0 V.
+The biggest difference between the two plotted IV-curves from two different LEDs, is that the 4 um width 40 um period LED does not have a breakdown as the 16 um width 100 um period LED does.
+The difference could come from the fact that the 4 um width 40 um period LED was more prone to finger defects, which could cause worse contact between the fingers and the wafer. 
+At positive voltages, the two LEDs have the exponential increase in forward current from around 1.3 V.
 
+In \autoref{fig:led_light}, it can clearly be seen that the color of the emitted light from the LED is red.
+Red light has a wavelength between 620 and 720 nm \cite{red_light}.
+The aim of this work was to make a LED emitting light at 675 nm.
+As we observed red light, we can therefore conclude that the target wavelength was roughly achieved.
