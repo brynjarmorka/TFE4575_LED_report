@@ -3,10 +3,10 @@
 \subsection{LED theory}
 \label{LEDtheory}
 
-In its most simple form, a LED is a p-type semiconductor (SC) in contact with a n-type SC, i.e. a pn-junction \cite{streetman2015solid}.
+\noindent In its most simple form, a LED is a p-type semiconductor (SC) in contact with a n-type SC, i.e. a pn-junction \cite{streetman2015solid}.
 In the region close to the contact area of the two SC materials, electrons and holes will recombine.
 This leaves a negative charge on the p-type SC and a positive charge on the n-type SC, creating an electric field.
-The region where this electric field is present is called the depletion region, and will under normal conditions be free of charge carriers.
+The region where this electric field is present is called the depletion region, and will under normal conditions be depleted of charge carriers.
 When a voltage is applied over the pn-junction, electrons and holes are pushed into the depletion region where they recombine.
 This can either happen non-radiatively or radiatively, where the latter is the process that emits light.
 
@@ -21,7 +21,7 @@ This can either happen non-radiatively or radiatively, where the latter is the p
 
 \subsection{Photolithography}
 \label{photolithography}
-This section is based on Quirk and Serda's book \textit{Semiconductor Manufacturing Technology} \cite{quirkSerda}.
+\noindent This section is based on Quirk and Serda's book \textit{Semiconductor Manufacturing Technology} \cite{quirkSerda}.
 
 Photolithography is used to print micro- and nanoscale structures on a substrate.
 This is done by coating the substrate in a light-sensitive photoresist and strategically exposing it to light.
@@ -51,29 +51,24 @@ This is because only negative resist can achieve an undercut resist profile, whi
 Different photoresists need different baking parameters, spin speeds, developing times and exposure doses.
 The parameters can change for the same resist over time, e.g. when the resist is exposed to light, heat, humidity, or contaminations.
 
-\subsection{Contact Formation} \label{contactformation}
+\subsection{Contacts, etching and passivation} \label{contactformation}
 
-
-\hyperref[contactformation]{Subsection~\ref*{contactformation}}, \autoref{etching}, and \autoref{passivation} are based on the laboratory manual for TFE4575 \cite{labmanual}.
+\noindent This subsection is based on the laboratory manual for TFE4575 \cite{labmanual}.
 
 LEDs need to have both a front and back metal contact.
-The purpose of the contacts are to provide a path so that  current can be injected to the device. 
+The purpose of the contacts are to provide a path so that current can be injected to the device. 
 The back contact can simply be deposited on the whole back side of the wafer.
 The front contact however, needs to be patterned.
 In order to reduce absorption losses, the contact area needs to be minimized while keeping the spreading resistance as low as possible.
 It is important to carefully chose the contact material, as it affects the electrical properties of the device.
 Also, the front side contracts should be made first, as the following steps may damage the surface.
 
-\subsection{Etching}
-\label{etching}
 
 Etching is a process of chemically removing material from a surface. 
 The process can be divided into two categories -  wet etching and dry etching.
 Wet etching uses a liquid etchant, while dry etching uses a gas etchant.
 In LED fabrication, etching is an important process step.
 Here, etching is typically used to remove strongly light absorbing layers or to electrically isolate different parts of the device.
-
-\subsection{Passivation} \label{passivation}
 
 Exposed sides of the LED will result in high non-radiative recombination at the surface, which will reduce the efficiency of the LED.
 Also, exposed sided increases the risk of shorting the circuit.
@@ -93,8 +88,6 @@ where $d$ is the thickness and $n$ is the refractive index.
 \subsection{Equipment}
 \label{Equipment}
 
-The manufacturing equipment used in the lab were hot plate, spin coater, photolithography tool, PECVD, and annealing furnace.
-
-The characterization equipment used in this lab were optical microscope, SEM, profilometer, ellipsometer, and LED IV-testing.
-
-The theory and working principle behind these tools and instruments are assumed to be known.
+\noindent The theory and working principle behind the tools and instruments used in this lab is assumed to be known.
+The manufacturing equipment used were hot plate, spin coater, MLA (Maskless aligner) photolithography tool, PECVD, and annealing furnace.
+The characterization equipment used were optical microscope, SEM, profilometer, ellipsometer, and source meter.

@@ -1,6 +1,6 @@
 % METHODS
 
-The layered LED sample is shown in \autoref{fig:metal_layers} was grown by the staff of the course.
+\noindent The layered LED sample is shown in \autoref{fig:metal_layers} was grown by the staff of the course.
 To form working LEDs from the wafer, the following steps were done at NTNU NanoLab:
 
 \begin{enumerate}
@@ -25,7 +25,8 @@ To form working LEDs from the wafer, the following steps were done at NTNU NanoL
 \end{figure}
 
 Each step was first done with a GaAs dummy sample to check that the process was working as intended.
-After the last step, the LED was tested at a lab at IES, the Department of Electronic Systems at NTNU.
+After the last step, the IV-characteristics of the LEDs were inspected.
+%After the last step, the LED was tested at a lab at IES, the Department of Electronic Systems at NTNU.
 
 
 \subsection{LED design}
@@ -58,82 +59,6 @@ Schematics of the alignment marks in layer 1 and layer 2 is shown in \autoref{fi
 % clewin figures, L1 to L5 and alignment marks
 
 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.45\textwidth]{figures/CleWin_L1.png}
-    \caption{
-        Layer 1. 
-        Numbers on the top is the spacing between the fingers in the LED matrix.
-        Numbers on the left side is the width of the fingers in the LED matrix.
-        Each LED is 1 mm x 1 mm. 
-        Alignment marks for layer 1 are in the corners. 
-    }
-    \label{fig:CleWin_L1}
-\end{figure}
-
-
-% L2
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.45\textwidth]{figures/CleWin_L2.png}
-    \caption{
-        Layer 2. 
-        This is the same as layer 1, but with a 5 \textmu m buffer on the whole pattern. 
-    }
-    \label{fig:CleWin_L2}
-\end{figure}
-
-
-% L3 
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.45\textwidth]{figures/CleWin_L3.png}
-    \caption{
-        Layer 3. 
-        This is the mesa etch layer. 
-        The size of the box covering each LED is 1.012 mm x 1.012 mm.
-    }
-    \label{fig:CleWin_L3}
-\end{figure}
-
-% L4
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.45\textwidth]{figures/CleWin_L4.png}
-    \caption{
-        Layer 4. 
-        This is the HF etch layer. 
-        Each bar is covering a part of the bottom bus bar, with a size of 30 \textmu m x 980 \textmu m.
-    }
-    \label{fig:CleWin_L4}
-\end{figure}
-
-% L5
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.45\textwidth]{figures/CleWin_L5.png}
-    \caption{
-        Layer 5. 
-        This is the pad metallization layer, where each box is 1 mm x 0.8 mm. 
-        The box is covering the bottom bus bar of each LED. 
-    }
-    \label{fig:CleWin_L5}
-\end{figure}
-
-
-% Alignment marks
-\begin{figure}[ht]
-    \centering
-    \includegraphics[width=0.45\textwidth]{figures/CleWin_alignment_marks.png}
-    \caption{
-        Alignment marks for layer 1 on the left and layer 2 on the right. 
-        The design allows quantification of the alignment error.
-        These marks are the Verniers design. 
-    }
-    \label{fig:CleWin_alignment_marks}
-\end{figure}
-
-
 
 
 \subsection{Front contact formation}
@@ -151,10 +76,10 @@ Negative photoresist was used, and the steps were done in the following order:
     \item Spin coated MAN 440 resist at 4000 rpm for 30 seconds with 1000 rpm/s acceleration.
     \item Cleaned the backside.
     \item Soft baked at 95 \textdegree C for 1 minute.
-    \item Exposed the pattern at 1300 mJ/cm$^2$ in the MLA, maskless aligner.
+    \item Exposed the pattern at 1300 mJ/cm$^2$ in the MLA.
     \item Developed in maD-332S developer for 5 minutes.
     \item Optical inspected the pattern.
-    \item Teaching assistants metallized the wafer with a Pd/Ti/Pt/Au stack.
+    \item Teaching assistants metallized the wafer with a \\Pd/Ti/Pt/Au stack.
     \item Lift-off with acetone.
 \end{enumerate}
 
@@ -167,7 +92,82 @@ The wafer was cleaned thoroughly with acetone and IPA before the second round, b
 Another problem was that the dose test were done with a resist that got emptied, and a newer resist had to be used for the actual process.
 When using the new resist the developer time was increased from 5 to 6 minutes, which gave an undercut but damaged the alignment marks and the thickest and closest fingers.
 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth]{figures/CleWin_L1.png}
+    \caption{
+        Layer 1. 
+        Numbers on the top is the spacing between the fingers in the LED matrix.
+        Numbers on the left side is the width of the fingers in the LED matrix.
+        Each LED is 1 mm x 1 mm. 
+        Alignment marks for layer 1 are in the corners. 
+    }
+    \label{fig:CleWin_L1}
+\end{figure}
 
+
+% L2
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth]{figures/CleWin_L2.png}
+    \caption{
+        Layer 2. 
+        This is the same as layer 1, but with a 5 \textmu m buffer on the whole pattern. 
+    }
+    \label{fig:CleWin_L2}
+\end{figure}
+
+
+% L3 
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth]{figures/CleWin_L3.png}
+    \caption{
+        Layer 3. 
+        This is the mesa etch layer. 
+        The size of the box covering each LED is 1.012 mm x 1.012 mm.
+    }
+    \label{fig:CleWin_L3}
+\end{figure}
+
+% L4
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.3\textwidth]{figures/CleWin_L4.png}
+    \caption{
+        Layer 4. 
+        This is the HF etch layer. 
+        Each bar is covering a part of the bottom bus bar, with a size of 30 \textmu m x 980 \textmu m.
+    }
+    \label{fig:CleWin_L4}
+\end{figure}
+
+% L5
+\begin{figure}[]
+    \centering
+    \includegraphics[width=0.3\textwidth]{figures/CleWin_L5.png}
+    \caption{
+        Layer 5. 
+        This is the pad metallization layer, where each box is 1 mm x 0.8 mm. 
+        The box is covering the bottom bus bar of each LED. 
+    }
+    \label{fig:CleWin_L5}
+\end{figure}
+
+
+% Alignment marks
+\begin{figure}[]
+    \centering
+    \includegraphics[width=0.3\textwidth]{figures/CleWin_alignment_marks.png}
+    \caption{
+        Alignment marks for layer 1 on the left and layer 2 on the right. 
+        The design allows quantification of the alignment error.
+        These marks are the Verniers design. 
+    }
+    \label{fig:CleWin_alignment_marks}
+\end{figure}
+
+\newpage
 
 
 \subsection{GaAs contact layer etch}
